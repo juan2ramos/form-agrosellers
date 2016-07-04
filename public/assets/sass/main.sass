@@ -1,0 +1,86 @@
+@import "lib/settings"
+@import "lib/general"
+@import "lib/grid"
+@import "lib/forms"
+
+$widthContent: 71.25rem
+
+body
+  background: #F8F8F8
+.Header
+  background: #27383F
+.Header-Main
+  max-width: $widthContent
+  padding: 1rem 0
+.Errors
+  max-width: 35rem
+  margin: 2rem auto 0
+  li
+    padding: rem(4) 0
+    color: #ff797d
+
+.Container
+  max-width: $widthContent
+
+.FormAuth-container
+  width: 100%
+  max-width: 35rem
+  margin: 2rem 0
+
+.FormAuth h2
+  font-weight: 500
+  font-size: 1.25rem
+  color: #616161
+  line-height: 1.5rem
+  &.message
+    margin-bottom: 2rem
+    color: #7c7d73
+.select2-container
+  width: 100% !important
+  color: gray
+.select2-selection
+  border: none !important
+
+.Select-container
+  height: 4rem
+  font-size: 1rem
+  margin: 1.75rem 0
+  font-weight: 300
+  color: gray
+  border: 1px solid #C5C5C5
+  position: relative
+  .select2-selection--single
+    height: 4rem !important
+    text-align: left
+    background-color: rgba(255, 255, 255, 0) !important
+    padding: rem(20) rem(14)
+  .select2-selection__rendered
+    color: #C5C5C5  !important
+.select2-selection__arrow
+  top: rem(20) !important
+.Select-containerMultiple
+
+  font-size: 1rem
+  margin: 1.75rem 0
+  font-weight: 300
+  color: gray
+  border: 1px solid #C5C5C5
+  position: relative
+  & > label
+    position: absolute
+    top: rem(14)
+    font-size: rem(12)
+    font-weight: 300;
+    left: rem(20)
+    color: #a0a0a0
+
+  .select2-selection__rendered
+    padding: rem(30) 0 0 rem(20) !important
+  .select2-selection--multiple
+    background-color: rgba(255, 255, 255, 0) !important
+  .select2-selection__choice
+    background-color: #c5d257 !important
+    border: none !important
+    color: #253a1b !important
+    font-size: rem(14)
+    padding: rem(2)

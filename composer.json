@@ -1,0 +1,19 @@
+{
+    "name": "artico/form-agrosellers",
+    "description": "paquete formulario agrosellers",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ArticoForm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "juan2ramos",
+            "email": "juan2ramos@gmail.com"
+        }
+    ],
+    "require": {
+        "voku/simple-mysqli": "1.*"
+    }
+}

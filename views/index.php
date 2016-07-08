@@ -26,23 +26,24 @@ if (isset($errors)) {
         </label>
         <div class="Select-containerMultiple">
             <label>Selecciona tus cultivos</label>
+
             <select name="farming[]" id="farming" multiple="multiple">
-                <option value="Cultivo 1">Cultivo 1</option>
-                <option value="Cultivo 2">Cultivo 2</option>
-                <option value="Cultivo 3">Cultivo 3</option>
-                <option value="Cultivo 4">Cultivo 1</option>
-                <option value="Cultivo 5">Cultivo 2</option>
-                <option value="Cultivo 6">Cultivo 3</option>
+                <?php foreach ($farms as $farm): ?>
+                    <option value="<?php echo $farm->id ?>"><?php echo $farm->name ?></option>
+                <?php endforeach ?>
             </select>
         </div>
         <div class="Select-container">
             <select name="city" id="city">
                 <option value="">Selecciona la región</option>
-                <option value="Cali" <?php echo (isset($_POST['city']) and $_POST['city'] == 'Cali') ? 'selected' : '' ?> >cali</option>
-                <option value="medellin" <?php echo (isset($_POST['city']) and $_POST['city'] == 'medellin') ? 'selected' : '' ?> >medellin
-                </option>
-                <option value="Bogota" <?php echo (isset($_POST['city']) and $_POST['city'] == 'Bogota') ? 'selected' : '' ?> >Bogota</option>
+                <?php foreach ($regions as $region): ?>
+                    <option value="<?php echo $region->id ?>"
+                        <?php echo ($region->id == $_POST['city']) ? 'selected' : '' ?>>
+                        <?php echo $region->name ?>
+                    </option>
+                <?php endforeach ?>
             </select>
+
         </div>
         <button type="submit" class="Button submit">REGISTRATE</button>
     </div>

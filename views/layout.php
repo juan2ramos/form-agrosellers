@@ -24,7 +24,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
 <script type="text/javascript">
-    $('#farming').select2();
+    $('#farming').select2({
+        closeOnSelect: false
+    });
     $('#city').select2();
 </script>
 </body>

@@ -38,7 +38,7 @@ if (isset($errors)) {
                 <option value="">Selecciona la región</option>
                 <?php foreach ($regions as $region): ?>
                     <option value="<?php echo $region->id ?>"
-                        <?php echo ($region->id == $_POST['city']) ? 'selected' : '' ?>>
+                        <?php echo (isset($_POST) && $region->id == $_POST['city']) ? 'selected' : '' ?>>
                         <?php echo $region->name ?>
                     </option>
                 <?php endforeach ?>

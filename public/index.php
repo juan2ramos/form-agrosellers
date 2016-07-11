@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set("America/Bogota");
-ini_set('display_errors', 1);
+error_reporting(E_ALL ^ E_NOTICE);
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', realpath(dirname(__FILE__)) . DS);
 

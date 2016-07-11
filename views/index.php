@@ -14,10 +14,10 @@ if (isset($errors)) {
         if (isset($message)):
             echo '<h2 class="message"> Gracias por registrarse en agrosellers  </h2>';
         else: ?>
-        <h2>REGISTRO COMPRADORES </h2>
+        <h2>¡HAZ PARTE DE AGROSELLERS!</h2>
         <label for="name">
             <input type="text" id="name" name="name" value="<?php echo(isset($_POST['name']) ? $_POST['name'] : '') ?>">
-            <span>Nombre Empresa</span>
+            <span>Nombre o Empresa</span>
         </label>
         <label for="email">
             <input type="email" id="email" value="<?php echo(isset($_POST['email']) ? $_POST['email'] : '') ?>"
